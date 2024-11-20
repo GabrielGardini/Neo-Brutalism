@@ -1,4 +1,3 @@
-import localFont from "next/font/local";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -133,7 +132,7 @@ export default function Home() {
                 <Image src="./globe.svg" width={30} height={30} />
               </div>
               <h1>Title</h1>
-              <p>Here is where you will add the card's description</p>
+              <p>Here is where you will add the card description</p>
             </div>
           </div>
         </div>
