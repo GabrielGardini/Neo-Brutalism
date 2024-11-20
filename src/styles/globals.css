@@ -1,42 +1,323 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  margin: 0;
+  background-color: #ffff00;
+  font-family: "Lexend Mega", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+h1 {
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid black;
+  background-color: #3300ff;
+  padding-bottom: 10px;
+}
+
+header div {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 5px solid black;
+  box-shadow: 4px 6px black;
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.introduction h2 {
+  width: 80%;
+  border: 5px solid black;
+  box-shadow: 4px 6px black;
+  border-radius: 20px;
+  background-color: #fdfd96;
+  padding: 10px;
+}
+
+.buttonIntroduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: aqua;
+  border-top: 5px solid black;
+}
+
+.buttonSectionTitle {
+  margin-top: 100px;
+  width: 200px !important;
+  border: 5px solid black;
+  box-shadow: 4px 6px black;
+  border-radius: 20px;
+  background-color: #ff0077 !important;
+  padding: 10px;
+  color: white;
+}
+
+.cardIntroduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #2fff2f;
+}
+
+.cardSectionTitle {
+  margin-top: 100px;
+  width: 200px !important;
+  border: 5px solid black;
+  box-shadow: 4px 6px black;
+  border-radius: 20px;
+  background-color: #3300ff;
+  color: white;
+  padding: 10px;
+}
+
+.textIntroduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ff4911;
+}
+
+.textSectionTitle {
+  margin-top: 100px;
+  width: 200px !important;
+  border: 5px solid black;
+  box-shadow: 4px 6px black;
+  border-radius: 20px;
+  background-color: #7df9ff;
+  padding: 10px;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid black;
+  background-color: aqua;
+}
+
+.content {
+  margin-top: 0; /* Ajuste para desktop */
+  margin-bottom: 100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff0077;
+  border-radius: 10px;
+  border: 3px solid black;
+  box-shadow: 2px 3px black;
+  width: 30vw;
+  height: 300px;
+}
+
+.buttonBox button {
+  font-family: "Lexend Mega", sans-serif;
+  font-weight: 700;
+  background-color: #ff00f5;
+  color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: 3px solid black;
+  box-shadow: 2px 3px black;
+}
+
+.buttonBox button:hover {
+  box-shadow: 4px 6px black;
+  cursor: pointer;
+}
+
+.buttonBox button:active {
+  background-color: #ff00f7b2;
+}
+
+.scrollBox {
+  width: 30vw;
+  height: 300px;
+  border: 3px solid black;
+  box-shadow: 2px 3px black;
+  border-radius: 10px;
+  overflow-y: scroll;
+  background-color: #f9f9f9;
+}
+.scrollBoxCard{
+  width: 30vw;
+  height: 300px;
+  border: 3px solid black;
+  box-shadow: 2px 3px black;
+  border-radius: 10px;
+  overflow-y: scroll;
+  background-color: #f9f9f9;
+}
+
+pre {
+  margin: 0; /* Remove espaçamento extra */
+  font-family: "Lexend Mega", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.code {
+  width: 30vw;
+  height: 300px;
+  background-color: #ff0077;
+}
+
+.contentContainer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2fff2f;
+  border-bottom: 5px solid black;
+}
+
+.content2 {
+  margin-top: 0; /* Ajuste para desktop */
+  margin-bottom: 100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 3px solid black;
+  box-shadow: 2px 3px black;
+  width: 250px;
+  height: 250px;
+  /* background-color: #3300ff; */
+  background-color: #69d2e7;
+  text-align: center;
+  color: white;
+}
+
+.imageBox {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 3px solid black;
+  box-shadow: 2px 3px black;
+  margin: 10px;
+  background-color: #3300ff;
+  /* background-color: #69d2e7; */
+}
+
+.contentContainer3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff4911;
+}
+
+.content3 {
+  margin-top: 0; /* Ajuste para desktop */
+  margin-bottom: 100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inputBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 3px solid black;
+  box-shadow: 2px 3px black;
+  width: 30vw;
+  height: 300px;
+  background-color: #7df9ff;
+  text-align: center;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  border: 3px solid black;
+  box-shadow: 2px 3px black;
+  margin: 10px;
+  font-family: "Lexend Mega", sans-serif;
+  outline: none;
+}
+
+input:focus {
+  box-shadow: 4px 6px black;
+}
+
+@media (max-width: 768px) {
+  .content, .content2, .content3 {
+    flex-direction: column;
+  }
+
+  .buttonBox, .scrollBox, .scrollBoxCard, .code, .cardBox, .inputBox {
+    width: 80vw;
+  }
+
+  .imageBox {
+    width: 200px;
+    height: 150px;
+  }
+
+  input {
+    width: 90%;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+@media (max-width: 480px) {
+  .content, .content2, .content3 {
+    flex-direction: column;
+  }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  .buttonBox, .scrollBox, .scrollBoxCard, .code, .inputBox {
+    width: 90vw;
+  }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+  .imageBox {
+    width: 150px;
+    height: 100px;
+  }
+  .cardBox{
+    width:250px;
+    height:250px;
+  }
+  .scrollBoxCard{
+    margin-bottom: 30px;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  /* Espaço apenas para dispositivos móveis */
+  .scrollBox {
+    margin-top: 30px;
   }
 }
